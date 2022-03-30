@@ -1,12 +1,14 @@
 # DatabaseConnection Class
 `DatabaseConnection` class is a mysql result wrapper that's been extended from `MySQLi`. This class allows you to access MySQL database servers. There are plenty useful functions in the class that you can use it in pure php applications.
 
-# How to use this class?
-Import the class `DatabaseConnection`
+## Basic Usage:
 
-`require_once "~/DatabaseConnection.php";`
-```
-// Create an instance of the DatabaseConnection
+```php
+<?php
+
+require_once "~/DatabaseConnection.php";
+
+// Create an instance from the DatabaseConnection Class
 $db = new DatabaseConnection(MYSQL_DB, MYSQL_USERNAME, MYSQL_PASSWORD, DB_NAME);
 
 // Get list of Undeleted feeds
